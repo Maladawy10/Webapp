@@ -1,0 +1,16 @@
+<div class="form-froup row">
+
+    <label class="col-sm-2 col-form-label">Subject Description</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Description"
+        placeholder="Enter Description">
+    </div>
+</div>
+
+<button (click)="addSubject()" *ngIf="sub.Name==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateSubject()" *ngIf="sub.Name!=0" class="btn btn-primary">
+    Update
+</button>
